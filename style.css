@@ -33,9 +33,6 @@ span{
     -webkit-text-fill-color: transparent;
 }
 
-/* p{
-    color: #8c96a1;
-} */
 /* universal styling ends here */
 
 /* header section starts here */
@@ -59,6 +56,10 @@ span{
     align-items: center;
     /* margin-left: 1rem; */
     font-size: 1.5rem;
+}
+
+.header .logo:hover{
+    cursor: pointer;
 }
 
 .header .logo p{
@@ -111,6 +112,11 @@ span{
     border-radius: 0.5rem;
     /* height: 1.5rem;
     /* width: 7rem; */
+}
+
+.header .btn p:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(8, 157, 194, 0.9);
 }
 
 .header .btn a:hover{
@@ -172,11 +178,24 @@ span{
     color: white;
 }
 
-.left-col .work img{
+.left-col .my-work img{
     position: absolute;
     width: 1rem;
-    margin-left: 7rem;
-    /* margin-top: 1rem; */
+    margin-left: 8rem;
+    margin-top: 0.2rem;
+    transition: transform 0.3s  ease;
+}
+
+.left-col .my-work .view:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(8, 157, 194, 0.9);
+    
+}
+
+.left-col .my-work .view:hover img{
+    transition: 0.3s;
+    transform: scale(1.1);
+    transform: translateX(0.5rem);
 }
 
 .left-col .resume{
@@ -197,8 +216,17 @@ span{
     opacity: 0.8;
     transition: 0.1s;
 }
+/* .right-col{
+display: inline-block;
+    width: 40rem;
+    height: 23rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+background-color: brown;
+} */
 
-.hero .right-col img{
+
+.right-col img{
     width: 40rem;
     height: 23rem;
     margin-right: -15rem;
@@ -271,6 +299,13 @@ span{
     margin-bottom: 1.5rem;
     margin-top: 0.5rem;
     border-radius: 0.5rem;
+    transition: transform o.3s ease;
+}
+
+.work:hover .img{
+    transition: 0.3s;
+    transform: scale(1.1);
+
 }
 
 /* .work .img::after{
@@ -341,11 +376,24 @@ span{
     color: black;
 }
 
+.explore:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(8, 157, 194, 0.7);
+    transition: 0.3s;
+}
+
 .explore img{
     /* background-color: #00e1ff; */
     width: 1.2rem;
     height: 1.2rem;
     margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.explore:hover img{
+    transition: 0.3s;
+    transform: scale(1.1);
+    transform: translateX(0.3rem);
 }
 
 /* journey section ends here */
@@ -445,6 +493,7 @@ color: white;
 }
 
 .right-col .image:hover{
+    cursor: pointer;
     background-color: #0b4cc4; 
 }
 
@@ -474,6 +523,28 @@ color: white;
    color: #8c96a1; 
    font-size: small;
 }
-
-
 /* footer section ends here */
+
+
+/* media-queries starts here */
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 480px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .body{
+        width: 5rem;
+    }
+  
+ 
+    .header{
+    position: fixed;
+    width: 5rem;
+    top: 0;
+    left: 0;
+    left: 0; 
+ } 
+  
+}
