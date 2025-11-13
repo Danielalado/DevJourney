@@ -365,9 +365,10 @@ background-color: brown;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 3rem;
+     margin: 3rem auto 1rem auto;
+    /* margin-top: 3rem; */
     /* margin-left: 35rem; */
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     background-color: #00bfff;
     width: 15rem;
     height: 3rem;
@@ -532,6 +533,11 @@ color: white;
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 480px
 */
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 480px
+*/
 @media (min-width: 320px) and (max-width: 480px) {
 
 
@@ -542,13 +548,15 @@ color: white;
  .hero{
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
+    margin: 4rem auto 0rem auto;
  }
 
  .left-col{
     display: flex;
     flex-direction: column;
-    padding-left: 8rem;
+     margin: auto auto;
+    /* padding-left: 8rem; */
  }
 
  .left-col h2{
@@ -594,14 +602,12 @@ color: white;
  }
 
  .work{
-    width: 18rem;
-    height: 22rem;
+    width: auto;
+    height: auto;
  }
 
  .explore{
     margin: 1rem auto 0.5rem auto;
-    /* margin-bottom: 1rem; */
-    /* margin-left: 1rem; */
  }
 
  .contact{
@@ -609,18 +615,23 @@ color: white;
  }
 
  .contact .left-col{
-    margin-left: -10.5rem;
+    margin-left: -2.5rem;
  }
 
  .contact .left-col .future{
-    width: 18rem;
-    /* text-align: justify; */
+    margin-top: 0.1rem;
+    width: auto;
  }
 
  .contact .middle-col{
     margin-left: -2.5rem;
     margin-top: 2rem;
  }
+
+  .contact .middle-col .btns{
+    margin-top: 0.1rem;
+ }
+
 
  .contact .right-col{
     margin-top: 2rem;
@@ -629,6 +640,109 @@ color: white;
  }
 
  .contact .right-col .images{
+    margin-top: -1rem;
+ }
+
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+     .header .btn{
+    display: none;
+ }
+
+  .hero{
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 4rem; */
+    margin: 4rem auto 0rem auto;
+ }
+
+  .left-col{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    /* padding-left: 8rem; */
+ }
+
+  .my-work{
+    flex-direction: column;
+    /* margin-top: -20rem; */
+    /* height: 5rem; */
+ }
+
+  .my-work .resume{
+    margin-top: 1rem;
+    width: 13rem;
+    text-align: center;
+ }
+
+ .right-col img{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    width: 100%;
+    height: 20%;
+ } 
+
+  .my-journey h2{
+    margin-bottom: -0.2rem;
+    font-size: 2.5rem;
+ }
+
+  .my-journey p{
+    padding: 1rem;
+    /* font-size: 1rem; */
+ }
+
+  .works{
+    flex-direction: column;
+    padding-left: 1rem;
+ }
+
+  .work{
+    width: auto;
+    height: auto;
+ }
+
+ .explore{
+    margin: 2rem auto 1rem auto;
+ }
+
+ .contact{
+    flex-direction: column;
+    margin-left: -1rem;
+ }
+
+
+  .contact .left-col{
+    margin-left: -1rem;
+ }
+
+  .contact .left-col .future{
+    margin-top: 0.1rem;
+    width: auto;
+ }
+
+  .contact .middle-col{
+    margin: 2rem auto 1rem -1rem;
+ }
+
+ .contact .middle-col .btns{
+    margin-top: 0.1rem;
+ }
+
+  .contact .right-col{
+    margin: 2rem auto auto -1rem;
+    width: 20rem;
+ }
+
+  .contact .right-col .images{
     margin-top: -1rem;
  }
 
