@@ -534,17 +534,99 @@ color: white;
 */
 @media (min-width: 320px) and (max-width: 480px) {
 
-    .body{
-        width: 5rem;
-    }
+
+ .header .btn{
+    display: none;
+ }
+
+ .hero{
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .left-col{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8.5rem;
+ }
+
+ .left-col h2{
+    font-size: 2.5rem;
+ }
+
+ .left-col p{
+    font-size: 1rem;
+    width: 18rem;
+ }
+
+ .my-work{
+    flex-direction: column;
+    margin-top: -20rem;
+    height: 5rem;
+ }
+
+ .my-work .resume{
+    margin-top: 1rem;
+    width: 12rem;
+ }
   
+ .right-col img{
+    margin-top: 3.5rem;
+    margin-left: -0.5rem;
+    width: 18rem;
+    height: 10rem;
+ }
+
+ .my-journey h2{
+    margin-bottom: -0.2rem;
+    font-size: 2.5rem;
+ }
  
-    .header{
-    position: fixed;
-    width: 5rem;
-    top: 0;
-    left: 0;
-    left: 0; 
- } 
-  
+ .my-journey p{
+    padding: 1rem;
+    /* font-size: 1rem; */
+ }
+
+ .works{
+    flex-direction: column;
+    padding-left: 1rem;
+ }
+
+ .work{
+    width: 18rem;
+    height: 20rem;
+ }
+
+ .explore{
+    margin-left: 2rem;
+ }
+
+ .contact{
+    flex-direction: column;
+ }
+
+ .contact .left-col{
+    margin-left: -10.5rem;
+ }
+
+ .contact .left-col .future{
+    width: 18rem;
+    /* text-align: justify; */
+ }
+
+ .contact .middle-col{
+    margin-left: -2rem;
+    margin-top: 2rem;
+ }
+
+ .contact .right-col{
+    margin-top: 2rem;
+    margin-left: -2rem;
+    width: 20rem;
+ }
+
+ .contact .right-col .images{
+    margin-top: -1rem;
+ }
+
 }
