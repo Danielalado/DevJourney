@@ -366,7 +366,7 @@ background-color: brown;
     align-items: center;
     justify-content: space-between;
     margin-top: 3rem;
-    margin-left: 35rem;
+    /* margin-left: 35rem; */
     margin-bottom: 3rem;
     background-color: #00bfff;
     width: 15rem;
@@ -542,16 +542,17 @@ color: white;
  .hero{
     flex-direction: column;
     align-items: center;
+    margin-top: 4rem;
  }
 
  .left-col{
     display: flex;
     flex-direction: column;
-    padding-left: 8.5rem;
+    padding-left: 8rem;
  }
 
  .left-col h2{
-    font-size: 2.5rem;
+    font-size: 3rem;
  }
 
  .left-col p{
@@ -572,7 +573,7 @@ color: white;
   
  .right-col img{
     margin-top: 3.5rem;
-    margin-left: -0.5rem;
+    margin-left: -1rem;
     width: 18rem;
     height: 10rem;
  }
@@ -594,11 +595,11 @@ color: white;
 
  .work{
     width: 18rem;
-    height: 20rem;
+    height: 22rem;
  }
 
  .explore{
-    margin-left: 2rem;
+    margin-left: 1rem;
  }
 
  .contact{
@@ -615,13 +616,13 @@ color: white;
  }
 
  .contact .middle-col{
-    margin-left: -2rem;
+    margin-left: -2.5rem;
     margin-top: 2rem;
  }
 
  .contact .right-col{
     margin-top: 2rem;
-    margin-left: -2rem;
+    margin-left: -2.5rem;
     width: 20rem;
  }
 
