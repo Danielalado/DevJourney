@@ -599,7 +599,9 @@ color: white;
  }
 
  .explore{
-    margin-left: 1rem;
+    margin: 1rem auto 0.5rem auto;
+    /* margin-bottom: 1rem; */
+    /* margin-left: 1rem; */
  }
 
  .contact{
